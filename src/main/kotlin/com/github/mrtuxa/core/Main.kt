@@ -13,12 +13,6 @@ class Main {
         val jda : JDA
         val dotenv = dotenv()
 
-        // check if TOKEN in environment is null
-        if (dotenv["TOKEN"] == null) {
-            exitProcess(1)
-        }
-
-
         try {
             jda = JDABuilder.createDefault(dotenv["TOKEN"])
                 .addEventListeners(Ready())
