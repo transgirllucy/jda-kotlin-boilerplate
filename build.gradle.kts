@@ -17,7 +17,7 @@ dependencies {
     testImplementation(kotlin("test"))
     implementation("io.github.cdimascio:dotenv-kotlin:6.4.1")
     implementation("net.dv8tion:JDA:5.0.0-beta.15")
-    implementation("ch.qos.logback:logback-classic:1.4.11")
+    implementation("ch.qos.logback:logback-classic:1.5.0")
 }
 
 tasks.test {
